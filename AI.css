@@ -179,7 +179,7 @@ h2 {
 .body2 {
     width: 200px;
     max-width: 100%;
-    padding-left: 79px;
+    padding-left: 50px;
     margin: auto;
 }
 
@@ -407,6 +407,7 @@ h2 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 70px 60px;
+    padding-top: 30px;
 }
 
 
@@ -524,6 +525,7 @@ h2 {
     display: grid;
     grid-template-columns: 500px minmax(0, 1fr);
     padding-left: 60px;
+    padding-top: 20px;
 }
 
 .sad {
@@ -566,14 +568,16 @@ h2 {
     background: #F6F8FA;
     border: 1px solid #F6F8FA;
     padding: 10px;
+    line-height: 20px;
 }
 
 .sad select {
-    width: 325px;
+    width: 300px;
     max-width: 100%;
     height: 40px;
     font-size: 15px;
     background: #F6F8FA;
+        border: 1px solid #F6F8FA;
     padding: 10px;
 }
 
@@ -609,7 +613,7 @@ h2 {
 
 .two-colo {
     background: linear-gradient(to left, #DA5D2F 70%, #24282D 30%);
-    height: 90vh;
+    height: 100vh;
     overflow: hidden;
     display: grid;
     grid-template-columns: 100px minmax(0, 1fr) 650px 100px;
@@ -837,7 +841,7 @@ img.be {
 }
 
 .m select {
-    width: 325px;
+    width: 300px;
     max-width: 90%;
     height: 40px;
     font-size: 15px;
@@ -949,12 +953,13 @@ img.be {
     font-weight: 600;
 }
 
-footer {
+.don{
     font-size: 17px;
     font-family: 'Times New Roman', Times, serif;
     color: white;
+    background-color: #24282D;
     text-align: center;
-}
+ }
 
 a {
     color: #a84c2a;
@@ -1731,11 +1736,11 @@ header {
     background-color:#DA5D2F;
 }
 
-/* Footer */
+
 .kk{
     text-align: center;
     padding: 20px;
-    background-color: #da5d2f;
+    background-color:#a84c2a;
     color: white;
     font-size: 14px;
 }
@@ -1778,3 +1783,347 @@ header {
     }
 }
  
+
+
+/* this is where my css for membership begins */
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ .we{
+    font-family: 'Montserrat', sans-serif;
+    color: #30251f;
+    background-color: #faf7f2;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Hero Section */
+.her12 {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    background:
+        linear-gradient(90deg, rgba(25, 20, 16, 0.9),
+        rgba(25, 20, 16, 0.35)),
+        url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0")
+        center/cover no-repeat;
+    color: white;
+}
+
+.hero-content2 {
+    max-width: 600px;
+}
+
+.subtitle {
+    color: #b88b50;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.her12 h1 {
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.description {
+    max-width: 480px;
+    color: #eee7df;
+    margin-bottom: 30px;
+}
+.mine{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #b88b50;
+    color: white;
+    padding: 13px 26px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #916832;
+    transform: translateY(-2px);
+}
+
+/* Benefits Section */
+.benefits {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.benefits h2,
+.how-it-works h2 {
+    font-size: clamp(26px, 3vw, 36px);
+    margin-bottom: 12px;
+}
+
+.section-description {
+    color: #77706a;
+    margin-bottom: 45px;
+}
+
+.benefit-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.benefit-card {
+    background: white;
+    padding: 35px 25px;
+    border: 1px solid #eee5d9;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.benefit-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+}
+
+.icon {
+    font-size: 35px;
+    color: #b88b50;
+    margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.benefit-card p {
+    font-size: 14px;
+    color: #77706a;
+}
+
+/* How It Works */
+.how-it-works {
+    background-color: #f0e8dc;
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 35px;
+    margin-top: 45px;
+}
+
+.step span {
+    display: inline-block;
+    color: #b88b50;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.step h3 {
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 14px;
+    color: #70675e;
+}
+
+/* Join Section */
+.join-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #a84c2a;
+    color: white;
+}
+
+.join-section h2 {
+    font-size: clamp(26px, 3vw, 36px);
+    margin-bottom: 15px;
+}
+
+.join-section p {
+    color: #ded4c9;
+    margin-bottom: 28px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 22px;
+    background-color: #a84c2a;
+    color: #cfc4b8;
+    font-size: 12px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 450px;
+        padding: 60px 7%;
+        background-position: center;
+    }
+
+    .benefits,
+    .how-it-works {
+        padding: 60px 6%;
+    }
+
+    .benefit-container,
+    .steps {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .benefit-card {
+        padding: 28px 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        min-height: 420px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .btn {
+        padding: 12px 20px;
+    }
+}
+.car{
+    background-color: white;
+    width: 320px;
+    height: 130px;
+    padding-top: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.see{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    
+}
+@media (max-width: 768px){
+    .see{
+        display: grid;
+        grid-template-columns: auto;
+        margin-top: 20px;
+        gap: 30px;
+    }
+}
+@media (max-width: 480px){
+    .see{
+        display: grid;
+        grid-template-columns: auto;
+        margin-top: 30px;
+        gap: 30px;
+    }
+}
+
+/* this is where become a member css starts */
+
+.name{
+    text-align: center; 
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    text-shadow: 1px 2px 3px #a84c2a;
+}
+
+
+.sam{
+    font-size: 15px;
+    margin-left: 350px;
+     margin-bottom: 2px;
+    font-family:'Arial Narrow Bold';
+    color: #DA5D2F
+    
+}
+
+.isa{
+    width: 50%;
+    height: 30px;
+    margin-bottom: 15px;
+    margin-left: 350px;
+}
+
+.is{
+    width: 20%;
+    height: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 350px;
+}
+
+
+.uu{
+    width:50%;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 350px;
+}
+
+
+/* this is where css for learn starts */
+.member{
+    font-size: 15px;
+    text-align: center;
+    padding: 30px;
+    margin: 40px;
+    background-color: #DA5D2F;
+    color: rgba(0, 0, 0, 0.717);
+}
+.membe{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.learn-footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.join-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #DA5D2F;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.learn-footer{
+    font-size: 20px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .learn-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .learn-membership {
+        padding: 35px 5%;
+    }
+}
